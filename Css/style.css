@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Colors */
+    --C1-color:#201E43;
+    --C2-color:#EEEEEE;
+    --C3-color:#508C9B;
+    --HOVER-color:#134B70;
+    /* Fonts */
+    --mont:"Montserrat", sans-serif;
+    --krona:"Krona One", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--C1-color);
+    color: var(--C2-color);
+}
+
+.H {
+    padding: 2% 0% 0% 15%;
+}
+
+.HN1 {
+    display: flex;
+    gap: 80px;
+}
+.H1 {
+    font-family: var(--mont);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--C3-color);
+    text-decoration: none;
+}
+
+.T1 {
+    color:var(--C3-color);
+}
+.container {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.container__01 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container__01__02 {
+    font-size: 2.25rem;
+    font-family: var(--krona);
+}
+
+.container__01__02__03 {
+    font-size: 1.5rem;
+    font-family: var(--mont);
+}
+
+.div01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.subH2 {
+    font-family: var(--krona);
+    font-weight: 400;
+    font-size: 1.5rem;
+
+}
+
+.A1 {
+    /* background-color: #000000; */
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--C3-color);
+    width: 70%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color:var(--C2-color);
+    font-family: var(--mont);
+    gap: 18px;
+}
+
+.A1:hover {
+    background-color:var(--HOVER-color);
+    padding: 3%;
+}
+
+.img1 {
+    width: 50%;
+}
+
+.F01 {
+    color: var(--C1-color);
+    background-color:var(--C3-color);
+    text-align: center;
+    padding: 24px;
+    font-size: 1.5rem;
+    font-family: var(--mont);
+    font-weight: 400;
+}
+
+@media (max-width: 800px) {
+    .H{
+        padding: 10%;
+    }
+    .HN1{
+        justify-content: center;
+    }
+    .container{
+        flex-direction: column-reverse;
+        padding: 6%;
+    }
+
+    .container__01{
+        width: auto;
+    }
+
+}
